@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>DRAGGABLE OBJECTS</h1>
+    <section class="container">
+        <div class="inner left">
+            <div class="card" id="card" draggable="true">
+                <img src="images/Fortnite_S1.webp" alt="Fortnite logo" width="50px">
+                <p>Fortnite</p>
+            </div>
+            <div class="card" id="card" draggable="true">
+                <img src="images/the-csgo-logo-now-officially-being-the-biggest-gaming-art-v0-8aq8x28prldb1.webp"
+                    alt="CSGO logo" width="50px">
+                <p>CSGO</p>
+            </div>
+            <div class="card" id="card" draggable="true">
+                <img src="images/valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="Fortnite logo" width="50px">
+                <p>Valorant</p>
+            </div>
+        </div>
+        <div class="inner right" ondragover="allowDrop(event)" ondrop="drop(event)">
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
